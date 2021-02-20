@@ -30,6 +30,10 @@ return (
  </App>
 )
 
+setState => ask to refresh while click (if onClick)
+on[Event] => properties (convention)
+handel[Event] => methode (convention)
+
 
 
 ##Normal ==> In React 
