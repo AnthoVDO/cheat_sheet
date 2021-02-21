@@ -1,3 +1,6 @@
+# I know that some stuff are hidden, I will fix it later  
+
+
 # cheat_sheet
 Taking some note about programmation
 
@@ -30,11 +33,15 @@ return (
  </App>
 )
 
-setState => ask to refresh while click (if onClick)
-on[Event] => properties (convention)
-handel[Event] => methode (convention)
+setState => ask to refresh while click (if onClick) important to use this methode to update. Never use state
+on[Event] => properties (convention)  
+handel[Event] => methode (convention)  
 
 .bind(this) => used on the event to set the this. Without that, the this is undefined because it's inside an event. Exemple: "<button onClick={this.handelClick.bind(this)}>Click me</button>"
+or  
+<button onClick={()=>this.handelClick()}>Click me</button>" => use function to keep the 'this'  
+or  
+make handelClick a function
 
 
 ##Normal ==> In React 
